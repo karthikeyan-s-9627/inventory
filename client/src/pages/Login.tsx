@@ -30,7 +30,7 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
       <div className="max-w-md w-full p-8 bg-white rounded-lg shadow-lg border border-gray-100">
         <div className="flex flex-col items-center mb-8">
-          <div className="bg-green-600 p-3 rounded-full mb-4">
+          <div className="bg-yellow-600 p-3 rounded-full mb-4">
             <Package2 className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-2xl font-bold text-gray-900">Inventory System</h1>
@@ -50,7 +50,7 @@ export default function LoginPage() {
               type="text"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
+              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
               placeholder="admin or staff"
               required
             />
@@ -61,7 +61,7 @@ export default function LoginPage() {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
+              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
               placeholder="••••••••"
               required
             />
@@ -70,7 +70,7 @@ export default function LoginPage() {
             type="submit"
             disabled={loading}
             className={clsx(
-              "w-full flex justify-center items-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors",
+              "w-full flex justify-center items-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition-colors",
               loading && "opacity-75 cursor-not-allowed"
             )}
           >
